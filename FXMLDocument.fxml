@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="606.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="ai.gui.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TextArea fx:id="originalPopText" layoutX="1.0" layoutY="298.0" prefHeight="222.0" prefWidth="299.0" />
+      <Text layoutX="87.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Original popuation " wrappingWidth="127.0" />
+      <Text layoutX="372.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New population " wrappingWidth="116.0" />
+      <Text layoutX="134.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weights" />
+      <Text layoutX="140.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profits" />
+      <TextField fx:id="profitText" layoutX="14.0" layoutY="170.0" prefHeight="102.0" prefWidth="299.0" />
+      <TextField fx:id="weightText" layoutX="14.0" layoutY="42.0" prefHeight="93.0" prefWidth="299.0" />
+      <ComboBox fx:id="selection" layoutX="442.0" layoutY="23.0" onAction="#selection" prefWidth="150.0" />
+      <Text fx:id="l1" layoutX="328.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="selection Method" />
+      <ComboBox fx:id="crossOver" layoutX="442.0" layoutY="63.0" onAction="#crossOver" prefWidth="150.0" />
+      <ComboBox fx:id="mutation" layoutX="442.0" layoutY="107.0" onAction="#mtation" prefWidth="150.0" />
+      <Text fx:id="l2" layoutX="330.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="crossver Method" />
+      <Text fx:id="l3" layoutX="328.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mutation Method" />
+      <Text fx:id="l6" layoutX="328.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="crossver" />
+      <Text fx:id="l7" layoutX="328.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mutation " />
+      <Text fx:id="l4" layoutX="410.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="probability" />
+      <Text fx:id="l5" layoutX="507.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rate" />
+      <TextField fx:id="crossoverProb" layoutX="400.0" layoutY="186.0" prefHeight="9.0" prefWidth="82.0" />
+      <TextField fx:id="mutaionProb" layoutX="401.0" layoutY="216.0" prefHeight="9.0" prefWidth="82.0" />
+      <TextField fx:id="crossoverRate" layoutX="489.0" layoutY="186.0" prefHeight="9.0" prefWidth="82.0" />
+      <TextField fx:id="mutationRate" layoutX="489.0" layoutY="216.0" prefHeight="9.0" prefWidth="82.0" />
+      <Button fx:id="generateBtn" layoutX="-3.0" layoutY="520.0" mnemonicParsing="false" onAction="#generatePop" prefHeight="32.0" prefWidth="606.0" text="Generate " />
+      <TextArea fx:id="newPopText" layoutX="293.0" layoutY="298.0" prefHeight="222.0" prefWidth="299.0" />
+    </children>
+</AnchorPane>
